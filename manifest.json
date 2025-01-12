@@ -80,7 +80,7 @@
                             "ios",
                             "android"
                         ],
-                        "appid": "wx3bac19ff90c0a976",
+                        "appid": "wxb391932b956e70ee",
                         "UniversalLinks": "https://d1.shopxo.vip/.well-known/"
                     },
                     "paypal": {
@@ -97,7 +97,7 @@
                     "univerify": {},
                     "apple": {},
                     "weixin": {
-                        "appid": "wx3bac19ff90c0a976",
+                        "appid": "wxb391932b956e70ee",
                         "appsecret": "91f132b39c5c575fe61b04993c57c734",
                         "UniversalLinks": "https://d1.shopxo.vip/.well-known/"
                     },
@@ -126,7 +126,7 @@
                 },
                 "share": {
                     "weixin": {
-                        "appid": "wx3bac19ff90c0a976",
+                        "appid": "wxb391932b956e70ee",
                         "UniversalLinks": "https://d1.shopxo.vip/.well-known/"
                     },
                     "qq": {
