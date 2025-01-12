@@ -26,6 +26,7 @@
     </view>
 </template>
 <script>
+    console.log('test')
     const app = getApp();
     import componentCommon from '@/components/common/common';
     import componentAppAdmin from '@/components/app-admin/app-admin';
