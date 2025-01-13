@@ -12,7 +12,7 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
       - name: Install
-        run: pnpm i
+        run: pnpm i --no-frozen-lockfile
       - name: Build
         run: npm run build:mp-weixin
       - name: Upload
