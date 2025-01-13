@@ -19,4 +19,4 @@ jobs:
         uses: lzzone/miniprogram-ci1@main
         with:
           project-path: dist/build/mp-weixin
-          private-key: ${{ secrets.PRIVATE_KEY }}        
+          private-key: ${{ secrets.PRIVATE_KEY }}
