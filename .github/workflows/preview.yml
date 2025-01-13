@@ -20,3 +20,5 @@ jobs:
         with:
           project-path: dist/build/mp-weixin
           private-key: ${{ secrets.PRIVATE_KEY }}
+      - name: Done
+        run: echo "Done"
