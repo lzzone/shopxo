@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install pnpm
-        run: npm install -g pnpm
+        run: npm i -g pnpm@9.15.2
       - name: Install
         # run: pnpm i --no-frozen-lockfile
         run: pnpm install --frozen-lockfile        
