@@ -33,3 +33,8 @@ jobs:
           private-key: ${{ secrets.PRIVATE_KEY }}
       - name: Done
         run: echo "Done"
+  build-done:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Done
+        run: echo "Done1"
