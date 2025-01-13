@@ -1,0 +1,32 @@
+name: 上传小程序体验版
+on:
+  workflow_dispatch
+    inputs:
+          parameter1:
+            description: "输入参数1"
+            required: false
+            default: "默认值1"
+          parameter2:
+            description: "输入参数2"
+            required: false
+            default: "默认值2"
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        run: |
+           echo "Running with parameter1: ${{ github.event.inputs.parameter1 }}"
+           echo "Running with parameter2: ${{ github.event.inputs.parameter2 }}"
+      - name: Install pnpm
+        run: npm install -g pnpm
+      - name: Install
+        run: pnpm i --no-frozen-lockfile
+      - name: Build
+        run: npm run build:mp-weixin
+      - name: Upload
+        uses: lzzone/miniprogram-ci1@main
+        with:
+          project-path: dist/build/mp-weixin
+          private-key: ${{ secrets.PRIVATE_KEY }}
