@@ -14,4 +14,4 @@ jobs:
       - name: Install
         run: pnpm i
       - name: Build
-        run: npm run dev:mp-weixin
+        run: npm run build:mp-weixin
